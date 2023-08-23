@@ -1,0 +1,13 @@
+version: 3
+
+tasks:
+  counter:client:
+    cmds:
+      - go run ./examples/counter_client/main.go
+
+  counter:service:
+    cmds:
+      - go run ./examples/counter_service/main.go
+  server:
+    cmds:
+      - nats-server
